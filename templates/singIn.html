@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <link href="../static/bootstrapfiles/css/bootstrap.css" rel="stylesheet" />
+    <link href="../static/bootstrapfiles/css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="../static/bootstrapfiles/js/bootstrap.min.js"></script>
+    <link href="../static/bootstrapfiles/css/bootstrap.css" rel="stylesheet" />
+    <link href="../static/bootstrapfiles/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../static/js files/SignInValidation.js"></script>
+<link rel="stylesheet" href="HomeStyle.css">
+<link href="../static/css files/cssStyle.css" rel="stylesheet" />
+
+</head>
+    <!-- NAVBAR START -->
+    <!-- Grey with black text -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="../static/img/tde.jpg" alt="logo" style="width:40px;">K-SITE
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('products')}}">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{url_for('regestration')}}">Regestration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{url_for('singin')}}">Sign</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- NAVBAR END -->
+
+<!-- LOgin Start -->
+        <div class="container" style="height: 550px;margin: 60px" >
+                <h2 style="margin: 50px"><strong style="color: rgb(78, 78, 197)">Login Page:</strong></h2>
+                <form  class="was-validated" action="{{url_for('singin')}}" method="POST" style="margin-bottom: 190px">
+                  <div class="form-group">
+                    <label for="uname">Username:</label>
+                    <input type="text" class="form-control" id="uname"
+                     placeholder=" please Enter username"
+                     onclick="validateUserName();"
+                     name="uname" required>
+                     <div class="invalid-feedback" id="unameinvalid"></div>
+
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control"
+                     id="pwd"
+                     onclick="validatePassword();"
+                     placeholder="please Enter password" name="pswd" required>
+                     <div class="invalid-feedback" id="pwdinvalid"></div>
+
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember" >Remember Me.
+                        
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <input type="reset" class="btn btn-danger">
+                </form>
+              </div>
+              <!-- Login ENd -->
+
+              <!-- Footer -->
+
+              <div class="footer">
+                    <p>
+                        <a class="fo" href="mailto:khaledabdelfatah200@gmail.com">Contuct Us</a>
+                        <a href="#" class="fo">About Us</a>
+            
+                    </p>
+            
+                </div>
+</body>
+</html> 

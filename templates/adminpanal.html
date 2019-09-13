@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin Panal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <link href="../static/bootstrapfiles/css/bootstrap.css" rel="stylesheet" />
+    <link href="../static/bootstrapfiles/css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="../static/bootstrapfiles/js/bootstrap.min.js"></script>
+    <link href="../static/bootstrapfiles/css/bootstrap.css" rel="stylesheet" />
+    <link href="../static/bootstrapfiles/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/css files/cssStyle.css" rel="stylesheet" />
+ </head>
+<body>
+       <!-- NAVBAR START -->
+    <!-- Grey with black text -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../static/img/tde.jpg" alt="logo" style="width:40px;">K-Site
+        </a>
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                        <button type="button" class="btn btn-primary">
+                                welcome <span class="badge badge-light">admin</span>
+                              </button>                </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{{url_for('home')}}">Home</a>
+            </li>
+             
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('products')}}">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('regestration')}}">Regestration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('singin')}}">Sign</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- NAVBAR END -->
+   
+<!-- ROWWWWWWW -->
+<div class="row">
+    <div class="col-lg-12 ">
+        <div class="alert alert-info">
+            <strong>Welcome admin ! </strong> You Have No pending Task For Today.
+        </div>
+
+    </div>
+</div>
+<!-- FIRST ROW -->
+<div class="row text-center pad-top" style="padding: 50px ; margin-bottom:80px; margin-left:30%">
+
+
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square">
+            <a href="https://mail.google.com" target="_blank">
+                <i class="fa fa-envelope-o fa-5x"></i>
+                <h4 style="margin-top: 10px"><button class="btn btn-primary">Mail Box</button></h4>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square">
+            <a href="{{url_for('viewusers')}}" target="_blank">
+                <i class="fa fa-users fa-5x"></i>
+                <h4 style="margin-top: 10px"><button class="btn btn-primary">See Users</button></h4>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square" style="background-image: image(fa-envelope-o)">
+            <a href="{{url_for('deletepage')}}" target="_blank">
+                <i class="fa fa-key fa-5x"></i>
+                <h4 style="margin-top: 10px"><button class="btn btn-primary">Delete Page</button></h4>
+            </a>
+        </div>
+
+
+    </div>
+
+    <!--  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square">
+             <a href="{{url_for('addprouduct')}}" target="_blank" >
+<i class="fa fa-lightbulb-o fa-5x"></i>
+<h4 style="margin-top: 10px"><button class="btn btn-primary">New Product</button></h4>
+</a>
+        </div>
+       
+       
+    </div>
+</div>
+
+<div class="row text-center pad-top" style="padding: 50px ; margin-bottom:80px; margin-left:30% ">
+    <!--  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square">
+             <a href="#" >
+    <i class="fa fa-clipboard fa-5x"></i>
+    <h4 style="margin-top: 10px"><button class="btn btn-primary">Products</button></h4>
+</a>
+        </div>
+       
+       
+    </div>
+
+    <!--  -->
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square">
+            <a href="#">
+                <i class="fa fa-gear fa-5x"></i>
+                <h4 style="margin-top: 10px"><button class="btn btn-primary">Setting</button></h4>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square">
+            <a href="{{url_for('edituser')}}" target="_blank">
+                <i class="fa fa-rocket fa-5x"></i>
+                <h4 style="margin-top: 10px"><button class="btn btn-primary">Edit User</button></h4>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+        <div class="div-square">
+            <a href="{{url_for('regestration')}}" target="_blank">
+                <i class="fa fa-user fa-5x"></i>
+                <h4 style="margin-top: 10px"><button class="btn btn-primary">Register User</button></h4>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+ 
+
+</div>
+
+<input type="text" hidden=true>
+
+
+ <!-- Footer -->
+
+ <div class="footer">
+    <p>
+        <a class="fo" href="mailto:khaledabdelfatah200@gmail.com">Contuct Us</a>
+        <a href="#" class="fo">About Us</a>
+
+    </p>
+
+</div>
+</body>
+</html>

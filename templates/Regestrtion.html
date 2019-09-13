@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="HomeStyle.css">
+    <link href="../static/bootstrapfiles/css/bootstrap.css" rel="stylesheet" />
+    <link href="../static/bootstrapfiles/css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="../static/bootstrapfiles/js/bootstrap.min.js"></script>
+    <link href="../static/bootstrapfiles/css/bootstrap.css" rel="stylesheet" />
+    <link href="../static/bootstrapfiles/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/css files/cssStyle.css" rel="stylesheet" />
+    <script src="../static/js files/regestrationValidate.js"></script>
+
+
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <!-- Grey with black text -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../static/img/tde.jpg" alt="logo" style="width:40px;">K-SITE
+        </a>
+        <ul class="navbar-nav ml-auto">
+               
+            <li class="nav-item ">
+                <a class="nav-link" href="{{url_for('home')}}">Home</a>
+            </li>
+             
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('products')}}">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="{{url_for('regestration')}}">Regestration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{{url_for('singin')}}">Sign</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- START -->
+    <div class="container" style="margin: 40px">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+
+                        <form class="was-validated" method="POST" action="{{url_for('regestration')}}">
+
+                            <div class="form-group">
+                                <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user fa"
+                                                aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="name" id="name"
+                                        onchange="IsValidForName();"
+                                        onblur="IsValidForName();"
+                                            placeholder="Enter your Name" 
+                                            
+                                            required/>
+                                    </div>
+                              <span id="namecheck1"  style="color: red;"  hidden>Your Name Must Be More than 3 litters</span>
+                              <span id="namecheck2"  style="color: red;"></span>
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-envelope fa"
+                                                aria-hidden="true"></i></span>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Enter your Email" 
+                                        onblur="validateEmail();"      
+                                        onchange="validateEmail();"   
+                                            required/>
+
+                                    </div>
+                                    <span style="color: red;" id="emailcheck1" ></span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="username" class="cols-sm-2 control-label">address</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-users fa"
+                                                aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="address" id="address"
+                                            placeholder="Enter your address" 
+                                        onblur="IsValidForUsername();"
+onchange="IsValidForUsername();"
+                                            required/>
+
+                
+                                    </div>
+        <span id="usernamecheck1" style="color: red;" hidden>Make sure to enter a VALID address</span>
+        <span id="usernamecheck2" ></span>
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="password" class="cols-sm-2 control-label">Password</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg"
+                                                aria-hidden="true"></i></span>
+                                        <input type="password" class="form-control" name="password" id="password"
+                                            placeholder="Enter your Password"
+                                        onblur="chckpasswoed();"
+                                        onchange="chckpasswoed();"
+
+                                            required />
+
+
+                                    </div>
+            <span id="passwordcheck1" ></span>
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg"
+                                                aria-hidden="true"></i></span>
+                                        <input type="password" class="form-control" name="confirm" id="confirm"
+                                            placeholder="Confirm your Password" 
+                                        onblur="confirmvalidate();"
+                                        onchange="confirmvalidate();"
+
+                                            required/>
+                                    </div>
+            <span id="confirmcheck1" ></span>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="form-group ">
+                                <button type="submit"
+                                onclick="finalsubmit();"
+                                    class="btn btn-primary btn-lg btn-block login-button">Register</button>
+                            </div>
+            <span id="wentWrong"  ></span>
+
+                            <div class="login-register">
+                                <a href="{{url_for('singin')}}">Do you aleardy hava an account?LOGIN</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <p>
+            <a class="fo" href="mailto:khaledabdelfatah200@gmail.com">Contuct Us</a>
+            <a href="#" class="fo">About Us</a>
+
+        </p>
+
+    </div>
+</body>
+
+</html>
