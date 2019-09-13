@@ -103,7 +103,8 @@ want to delete user or id of Product he want to delete spacific product And Pres
 ## FINAL NOTES:
 ## Make Sure That You have mysql db on your computer and a database named mydb 
 ## make sure to execute the sql commend to create a tables for you 
-## The sql commend can be found in  db folder
+## The sql commend can be found in app.py file all you can do is to uncomment them
+## or you can view them in db folder in mydb.sql file
 
 ## product table
 <img src="https://drive.google.com/uc?id=1vhvzA_Y41fC0e7qmGL0aJrEAFEfA3vXS"
