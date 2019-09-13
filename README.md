@@ -35,10 +35,16 @@ The only way that admin can log is to sing in as admin
 *username* >**admin**
 *Password* >**admin**
 this is the only way that can make the admin log in and access him/her to **control panal**
-
+<img src="https://drive.google.com/uc?id=1BENMkVmn0uyFBx1uHC5lUyQNacnOPt9m"
+     alt="Sing iN"
+     style="float: left; margin-right: 10px;" />
 
 ## Products Page
 The Product Page has a live data from database of the new products that users can view 
 The Card Has  Image,Title,Description
+<img src="https://drive.google.com/uc?id=1XlN5aVaucgeUWudrGEoRDExfDF1_-TMN"
+     alt="Product page"
+     style="float: left; margin-right: 10px;" />
 
- 
+**NOTE** >>*When User Sing in or register as anew user it navigate to home page with a welcome massege with username*
+**NOTE** >> *When Admin Sing In with admin,admin it navigate to Admin Control Panal*
