@@ -9,7 +9,9 @@
 
 ## Home Page 
  In Home page there's a few **OLD** products that you can see ,also HOME PAGE hava a Nav bar with a welcome Massege For User with his/her *Name*
- ![Home Page](https://drive.google.com/file/d/1oCCi5C5jT1nbILAIKdCI9fLm1T-OWcB_/view?usp=sharing)
+<img src="https://drive.google.com/uc?id=1oCCi5C5jT1nbILAIKdCI9fLm1T-OWcB_"
+     alt="HOME Page"
+     style="float: left; margin-right: 10px;" />
 ## Register page
 
  In This Page User Had TO Enter Name,Email,Address,Password
@@ -17,7 +19,25 @@
  *Email Must Be a Valid Email*
  *Password has to be STRONG password contain numbers,letters*
  *Confirm Password has to be The same As password*
-![Regestration Page](https://drive.google.com/file/d/10d8XeN-ZqfW0vn_KYHO1IW4SMcx0Yjp-/view?usp=sharing)
-## Sing In 
+ <img src="https://drive.google.com/uc?id=10d8XeN-ZqfW0vn_KYHO1IW4SMcx0Yjp-"
+     alt="HOME Page"
+     style="float: left; margin-right: 10px;" />
+
+ 
+ ## Sing In 
 In this page the user Can sing in for website with **UserName** and **Password**
-![Sign In page](https://drive.google.com/file/d/1N35HOgkonB9LFZWyTRtXgvrLM7-nxMyd/view?usp=sharing) 
+<img src=" https://drive.google.com/uc?id=1N35HOgkonB9LFZWyTRtXgvrLM7-nxMyd"
+     alt="Sing iN"
+     style="float: left; margin-right: 10px;" />
+
+## Sing In For Admin
+The only way that admin can log is to sing in as admin 
+*username* >**admin**
+*Password* >**admin**
+this is the only way that can make the admin log in and access him/her to **control panal**
+
+## Products Page
+The Product Page has a live data from database of the new products that users can view 
+The Card Has  Image,Title,Description
+
+ 
