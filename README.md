@@ -97,3 +97,7 @@ want to delete user or id of Product he want to delete spacific product And Pres
      style="float: left; margin-right: 10px;" />
  
                       
+## FINAL NOTES:
+## Make Sure That You have mysql db on your computer and a database named mydb 
+## make sure to execute the sql commend to create a tables for you 
+## The sql commend can be found in  db folder
