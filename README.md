@@ -47,4 +47,12 @@ The Card Has  Image,Title,Description
      style="float: left; margin-right: 10px;" />
 
 **NOTE** >>*When User Sing in or register as anew user it navigate to home page with a welcome massege with username*
+<img src="https://drive.google.com/uc?id=1r0lN78QnOfyHfhidc_Bthl4f7pGFrl6O"
+     alt="Product page"
+     style="float: left; margin-right: 10px;" />
 **NOTE** >> *When Admin Sing In with admin,admin it navigate to Admin Control Panal*
+
+**NOTE** >>*When a non Admin try to access the admin page by type the url for it without signin an error Page Will Be Displayed*
+<img src="https://drive.google.com/uc?id=1HKX5q5wxz56iI-go3qZLWorYddM_M_1y"
+     alt="error page"
+     style="float: left; margin-right: 10px;" />
