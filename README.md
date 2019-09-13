@@ -26,7 +26,7 @@
  
  ## Sing In 
 In this page the user Can sing in for website with **UserName** and **Password**
-<img src=" https://drive.google.com/uc?id=1N35HOgkonB9LFZWyTRtXgvrLM7-nxMyd"
+<img src="https://drive.google.com/uc?id=1N35HOgkonB9LFZWyTRtXgvrLM7-nxMyd"
      alt="Sing iN"
      style="float: left; margin-right: 10px;" />
 
@@ -35,6 +35,7 @@ The only way that admin can log is to sing in as admin
 *username* >**admin**
 *Password* >**admin**
 this is the only way that can make the admin log in and access him/her to **control panal**
+
 
 ## Products Page
 The Product Page has a live data from database of the new products that users can view 
