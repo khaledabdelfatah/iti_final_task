@@ -45,7 +45,7 @@ The Card Has  Image,Title,Description
 <img src="https://drive.google.com/uc?id=1XlN5aVaucgeUWudrGEoRDExfDF1_-TMN"
      alt="Product page"
      style="float: left; margin-right: 10px;" />
-
+## Note1
 **NOTE** >>*When User Sing in or register as anew user it navigate to home page with a welcome massege with username*
 <img src="https://drive.google.com/uc?id=1r0lN78QnOfyHfhidc_Bthl4f7pGFrl6O"
      alt="Product page"
@@ -78,6 +78,22 @@ want to delete user or id of Product he want to delete spacific product And Pres
      alt="Delete page"
      style="float: left; margin-right: 10px;" />
      
-**5** :      
+**5** : Edit User >> Its Now Easy To admin to edit user information All he need to do is to provide the id od user he want to edit...
+
+**If Admin want To edit name** >> Just type the the new name value in name input section.
+
+**If Admin want To edit E-mail** >> Just type the the new Email value in E-mail input section.
+
+**If Admin want To edit Address** >> Just type the the new address value in  Address section.
+
+**If Admin want To edit Role** >> Just type the the new role value in Role input section.
+
+**If Admin want To edit Password** >> Just type the the new Password value in password input section.
+
+
+
+<img src="https://drive.google.com/uc?id=1mPP-jjojTjLx-Wco9jngEqIQflCbDBQc"
+     alt="Delete page"
+     style="float: left; margin-right: 10px;" />
  
                       
