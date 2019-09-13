@@ -56,3 +56,28 @@ The Card Has  Image,Title,Description
 <img src="https://drive.google.com/uc?id=1HKX5q5wxz56iI-go3qZLWorYddM_M_1y"
      alt="error page"
      style="float: left; margin-right: 10px;" />
+     
+     
+     
+## ADMIN CONTROLL PANAL DESCRIPTION
+**1** :Mailbox >> *Open The E-mail-Gmail Page *
+
+**2** : SeeUsers >> *View users that have Register Their Data In The Site in a table*
+<img src="https://drive.google.com/uc?id=1hCw9Ia8rhr90CxpJsiEhRCIQhxTQ9l_q"
+     alt="error page"
+     style="float: left; margin-right: 10px;" />
+
+**3** : Delete Page >>*In This Page Admin Can Delete Users Or Products All He need is Name of user he want to delete if he
+want to delete user or id of Product he want to delete spacific product And Press Enter And the Data Will Be Deleted from DB*
+<img src="https://drive.google.com/uc?id=1yIOQ_7CJNJ9lDKjVLdmWHB5_Z3RdqDxU"
+     alt="Delete page"
+     style="float: left; margin-right: 10px;" />
+     
+**4** : New Product >>*We Make it easy for admin to add a new Product and this product will be displayed automaticlly in prouducts page all he need to do is to enter the name of product ,image and Description  of product*     
+<img src="https://drive.google.com/uc?id=16_N8Y38UXErcwmYwR1t7uJIs5BnfWk_H"
+     alt="Delete page"
+     style="float: left; margin-right: 10px;" />
+     
+**5** :      
+ 
+                      
